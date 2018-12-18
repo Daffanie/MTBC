@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Events</title>
+  </head>
+  <body>
+        
+         <div id="demo"></div>
+         <button id="time">
+            What time is it?
+        </button>
+
+        <!--Excercise 3 - Catch a Change-->
+        <select id="options">
+                <option>--Pick an Option--</option>
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+        </select>
+
+        <script> 
+            function showDate(element){
+                document.querySelector(element).innerHTML = Date();
+            }
+
+            //Excercise 3 - Catch a Change
+             function setValue(element){
+                let option = document.querySelector('options').value;
+                document.querySelector(element).innerHTML = option;
+             }
+
+
+
+            var btn = document.querySelector('#time');
+            btn.addEventListener('click', function(){
+                showDate('#demo');});
+
+            var list = document.querySelector('#options');
+            list.addEventListener('change', ()=>{setValue('#demo');});
+
+            
+        </script>    
+  </body>
+</html>

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>By Id</title>
+  </head>
+  <body>            
+      <div id="a" class="b">Hello World</div> 
+            
+      <p class="b">The quick brown dog jumped over the lazy cat.</p> 
+
+      <blockquote class="a b">It's a nice day!</blockquote>
+
+      <blockquote>How are you?</blockquote>
+
+      <input name = "first_name">
+      <input name = "last_name">
+
+      <script>
+            var elem = document.getElementById("a"); //Get the elements
+            elem.style = 'color: #ff0000'; //Change color to red
+
+            var list = document.getElementsByTagName('blockquote');
+            list[1].style = 'color: green';
+
+            var classList = document.getElementsByClassName('b');
+            classList[1].style = 'color: gray';
+
+            var classList = document.getElementsByClassName('a b');
+            classList[0].style = 'font-weight: bold;';
+
+            var inputs = document.getElementsByName('first_name');
+            inputs[0].style = 'border: 1px solid #ff0000';
+
+            var inputs2 = document.getElementsByName('last_name');
+            inputs2[0].style = 'border: 1px solid #0000ff';
+
+        </script>    
+  </body>
+</html>
