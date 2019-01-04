@@ -1,0 +1,19 @@
+<?php
+ $name = 'Bob Smith';
+ $greeting = "Hello {$name}";
+ $count=5;
+ $price=.63;
+ $total=($count*$price);
+ $msg = "{$greeting} I see you have {$count} oranges, that will be \${$total}";
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Contact</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <h1><?php echo $msg; ?></h1>
+    </body>
+</html>
